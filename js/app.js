@@ -22,7 +22,7 @@ function makeSentence(e) {
         button.disabled = true;
         setTimeout(() => {
             text.value = '';
-            button.disable = false;
+            button.disabled = false;
         }, 2000);
     }
 }

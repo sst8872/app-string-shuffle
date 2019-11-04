@@ -6,18 +6,46 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>String Shuffle</title>
+    <link rel="stylesheet" href="css/download.css">
+    <link rel="stylesheet" href="css/mediaQuery.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <div id="wrapper">
-        <form id="paper" method="get" action="">
-            <div id="margin">Title: <input id="title" type="text" name="title"></div>
-            <textarea placeholder="Enter Your sentences." id="text" name="text" rows="4" style="overflow: hidden; word-wrap: break-word; resize: none; height: 160px; "></textarea>
-            <br>
-            <div id="box"><input id="button" type="submit" value="Shuffle">
-            </div>
-        </form>
+        <header id="main-head">The header</header>
+        <article id="content">
+            <form id="paper">
+                <textarea placeholder="Enter Your sentences." id="text" name="text" rows="4" style="overflow: hidden; word-wrap: break-word; resize: none; height: 160px; "></textarea>
+                <br>
+                <div id="box"><input id="button" type="submit" value="Shuffle">
+                </div>
+            </form>
+        </article>
+        <nav>
+            <ul id="flex-container">
+                <li><span class="sentence">1형식문장</span>
+                    <a href='#' class="original">original</a>
+                    <a href="#">shuffled</a>
+                </li>
+                <li><span class="sentence">2형식문장</span>
+                    <a href='#' class="original">original</a>
+                    <a href="#">shuffled</a>
+                </li>
+                <li><span class="sentence">3형식문장</span>
+                    <a href='#' class="original">original</a>
+                    <a href="#">shuffled</a>
+                </li>
+                <li><span class="sentence">4형식문장</span>
+                    <a href='#' class="original">original</a>
+                    <a href="#">shuffled</a>
+                </li>
+                <li><span class="sentence">5형식문장</span>
+                    <a href='#' class="original">original</a>
+                    <a href="#">shuffled</a>
+                </li>
+            </ul>
+        </nav>
     </div>
 
     <div id="output"></div>
