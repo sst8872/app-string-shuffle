@@ -27,6 +27,40 @@
     display: none;
 }
 
+#myheader {
+    margin: 0 auto;
+    padding: 20px;
+    width: 500px;
+    color: #ddd;
+}
+
+#myheader h2 {
+    font-size: 1.6em;
+    margin-bottom: 5px;
+}
+
+#myheader p {
+    line-height: 1.6;
+    font-family: "Malgun Gothic";
+}
+
+#output {
+    text-align: center;
+    padding: 20px;
+}
+
+#output > #link {
+    color: #f1f1f1;
+    font-size: 1.6em;
+    text-decoration: none;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+#output > #link:hover {
+    cursor: pointer;
+    color: #62add6;
+}
+
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
@@ -47,4 +81,10 @@
         display: block;
         text-align: left;
     }
+}
+
+.clearfix {
+    content: '';
+    clear: both;
+    display: table;
 }

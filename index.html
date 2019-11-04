@@ -6,6 +6,10 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>String Shuffle</title>
+    <style>
+        @font-face {font-family:MalgunGothic; src:url(css/font/MalgunGothic.eot);}
+        .malgun { font-family:'Malgun Gothic' !important; }
+    </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/mediaQuery.css">
@@ -19,7 +23,7 @@
 </div>
     <div id="wrapper">
         <nav>
-            <div class="topnav" id="myTopnav">
+            <div class="topnav" id="myTopnav" class="clearfix">
                 <a href="#home" class="active">Home</a>
                 <a href="#news">News</a>
                 <a href="#contact">Contact</a>
@@ -28,12 +32,16 @@
                     <i class="fa fa-bars"></i>
                 </a>
             </div>
-
-            <div style="padding-left:16px">
-                <h2>Responsive Topnav Example</h2>
-                <p>Resize the browser window to see how it works.</p>
-            </div>
         </nav>
+        <header id="myheader">
+            <div style="padding-left:16px">
+                <h2>영작 연습을 위한 무작위 단어 배열</h2>
+                <p>문장(들)을 입력한 후에 'Shuffle' 버튼을 누르세요. <br>
+                    1. 무작위로 배열된 문장들을 'clip board'에 복사하여 사용하세요.<br>
+                    2. 'shuffle.txt' 파일을 다운 받아 사용하세요. ^^;
+                </p>
+            </div>
+        </header>
         <article id="content">
             <form id="paper">
                 <textarea placeholder="Enter Your sentences." id="text" name="text" rows="4" style="overflow: hidden; word-wrap: break-word; resize: none; height: 160px; "></textarea>
@@ -43,7 +51,9 @@
             </form>
         </article>
         <!-- Drop down menu uses class -->
-        <div id="output"></div>
+        <div id="output">
+            <a href="#" download="shuffle.txt" id="link">Download "shuffle.txt"</a>
+        </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

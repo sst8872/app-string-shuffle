@@ -30,13 +30,23 @@ function makeSentence(e) {
 function copyToClipboard() {
     button.value = 'Copy to Clipboard';
     text.select();
+
+    makeFile(text.value);
+
     button.addEventListener('click', function (e) {
         document.execCommand('copy');
+        // makeFile(text.value);
         output.style.color = 'white';
         output.textContent = 'Copied Successfully';
     });
 }
 
+function makeFile(data) {
+    console.log('song');
+    let blob = new Blob([data], { type: 'text/plain' });
+    link.href = URL.createObjectURL(blob);
+    // URL.revokeObjectURL(link.href);
+}
 
 function handleString(strArr) {
     if (strArr[0] == "") {
@@ -65,7 +75,7 @@ function shuffStr(arr) {
         })
         .join('.\n');
 
-    return res;
+    return res + '.';
 }
 
 function shuffle (arr) {
