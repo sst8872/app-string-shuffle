@@ -6,14 +6,34 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>String Shuffle</title>
-    <link rel="stylesheet" href="css/download.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/mediaQuery.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+<div class="ui three item menu">
+  <a class="active item">Editorials</a>
+  <a class="item">Reviews</a>
+  <a class="item">Upcoming Events</a>
+</div>
     <div id="wrapper">
-        <header id="main-head">The header</header>
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="#home" class="active">Home</a>
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+            <div style="padding-left:16px">
+                <h2>Responsive Topnav Example</h2>
+                <p>Resize the browser window to see how it works.</p>
+            </div>
+        </nav>
         <article id="content">
             <form id="paper">
                 <textarea placeholder="Enter Your sentences." id="text" name="text" rows="4" style="overflow: hidden; word-wrap: break-word; resize: none; height: 160px; "></textarea>
@@ -22,36 +42,13 @@
                 </div>
             </form>
         </article>
-        <nav>
-            <ul id="flex-container">
-                <li><span class="sentence">1형식문장</span>
-                    <a href='#' class="original">original</a>
-                    <a href="#">shuffled</a>
-                </li>
-                <li><span class="sentence">2형식문장</span>
-                    <a href='#' class="original">original</a>
-                    <a href="#">shuffled</a>
-                </li>
-                <li><span class="sentence">3형식문장</span>
-                    <a href='#' class="original">original</a>
-                    <a href="#">shuffled</a>
-                </li>
-                <li><span class="sentence">4형식문장</span>
-                    <a href='#' class="original">original</a>
-                    <a href="#">shuffled</a>
-                </li>
-                <li><span class="sentence">5형식문장</span>
-                    <a href='#' class="original">original</a>
-                    <a href="#">shuffled</a>
-                </li>
-            </ul>
-        </nav>
+        <!-- Drop down menu uses class -->
+        <div id="output"></div>
     </div>
-
-    <div id="output"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="vendors/jquery.autosize.min.js"></script>
+    <script src="js/navigation.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
