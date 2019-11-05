@@ -3,10 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="1b7f8dfc-847e-47b6-83f4-a7e403b01897" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/mediaQuery.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/navigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/navigation.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/navigation.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,6 +89,7 @@
       <workItem from="1572527580324" duration="12492000" />
       <workItem from="1572560613341" duration="251000" />
       <workItem from="1572845865538" duration="29421000" />
+      <workItem from="1572908020233" duration="3312000" />
     </task>
     <servers />
   </component>
@@ -98,7 +101,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

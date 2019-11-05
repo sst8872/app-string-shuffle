@@ -26,7 +26,8 @@ body {
     user-select: none;
 }
 #text {
-    width:500px;
+    /* commented by me */
+    /*width:400px;*/
     overflow:hidden;
     background-color:#FFF;
     color:#222;
@@ -89,10 +90,52 @@ body {
     filter: alpha(opacity=80);
     opacity: 0.8;
 }
+
+
 #wrapper {
     height:auto;
     margin-left:auto;
     margin-right:auto;
     margin-top:24px;
     margin-bottom:100px;
+}
+
+/* my css */
+#myheader {
+    margin: 0 auto;
+    padding: 40px;
+    width: 500px;
+    color: #ddd;
+}
+
+#myheader h2 {
+    font-size: 1.6em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#myheader p {
+    line-height: 1.6;
+    font-family: "Malgun Gothic";
+}
+
+#output {
+    text-align: center;
+    padding: 20px;
+}
+
+#output > #link {
+    color: #f1f1f1;
+    font-size: 1.6em;
+    text-decoration: none;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+#output > #link:hover {
+    cursor: pointer;
+    color: #62add6;
+}
+
+#link.hide {
+    display: none;
 }

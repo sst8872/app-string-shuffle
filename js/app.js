@@ -36,8 +36,9 @@ function copyToClipboard() {
     button.addEventListener('click', function (e) {
         document.execCommand('copy');
         // makeFile(text.value);
-        output.style.color = 'white';
-        output.textContent = 'Copied Successfully';
+        copied.style.color = '#6697ea';
+        copied.style.marginBottom = '10px';
+        copied.textContent = 'Copied Successfully!';
     });
 }
 
@@ -45,6 +46,7 @@ function makeFile(data) {
     console.log('song');
     let blob = new Blob([data], { type: 'text/plain' });
     link.href = URL.createObjectURL(blob);
+    link.classList.remove('hide');
     // URL.revokeObjectURL(link.href);
 }
 
