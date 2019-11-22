@@ -163,6 +163,28 @@ function makeChoice(value) {
 }
 
 function makeWordContent(num) {
+    console.log(myData);
+    exportContent.innerHTML = '';
     let tempData = myData[num-1].value;
-    console.log(tempData);
+    tempData.forEach((sentence, i)=> console.log(`${i+1}. ${sentence.en}`));
+
+    tempData.forEach((sentence, i) => {
+        exportContent.innerHTML += `
+                                    ${i+1}. ${sentence.en} <span class="korean" style="font-size: 10px">${sentence.ko}</span><br><br>
+                                    <div 
+                                        class="blank" 
+                                        style="border-bottom: 1px solid black;
+                                               color: white;
+                                               margin-left: 20px;
+                                               font-size: 8px;
+                                        "
+                                        >
+                                        ${sentence.en}${sentence.ko}</div><br><br>
+                                     `;
+    });
+
+    Export2Doc('exportContent', num + ' 형식');
+    exportContent.innerHTML = '';
 }
+
+
