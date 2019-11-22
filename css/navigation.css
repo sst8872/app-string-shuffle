@@ -84,13 +84,13 @@ body {
     color: #444;
     text-decoration: none;
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1rem;
     -webkit-transition: 200ms;
     transition: 200ms;
 }
 
 .nav-link:hover {
-    background-color: #f1f1f1;
+    background-color: #d2d2d2;
 }
 
 .active-link {
@@ -126,7 +126,7 @@ body {
         -ms-flex-direction: column;
         flex-direction: column;
         overflow: auto;
-        direction: rtl;
+        direction: ltr;
         transition: max-height 400ms;
         max-height: 80vh;
     }
