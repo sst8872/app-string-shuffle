@@ -95,10 +95,10 @@ body {
 
 /* list style ends */
 
-@media screen and (min-width: 560px){
-    #myheader > .info {
-        width: 100%;
-        margin-left: 15px;
+@media screen and (min-width: 876px){
+    .info {
+        max-width: 60%;
+        margin-left: calc(30% - 100px);
     }
 }
 
