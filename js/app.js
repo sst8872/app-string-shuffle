@@ -163,14 +163,16 @@ function makeChoice(value) {
 }
 
 function makeWordContent(num) {
-    console.log(shuffle(myData[num-1].value));
+    shuffle(myData[num-1].value);
     exportContent.innerHTML = '';
     let tempData = myData[num-1].value;
-    tempData.forEach((sentence, i)=> console.log(`${i+1}. ${sentence.en}`));
+    // tempData.forEach((sentence, i)=> console.log(`${i+1}. ${sentence.en}`));
 
     tempData.forEach((sentence, i) => {
+        let tempSentence = shuffStr([sentence.en]);
+        tempSentence;
         exportContent.innerHTML += `
-                                    ${i+1}. ${sentence.en} <span class="korean" style="font-size: 10px">${sentence.ko}</span><br><br>
+                                    ${i+1}. ${tempSentence} <span class="korean" style="font-size: 10px">${sentence.ko}</span><br><br>
                                     <div 
                                         class="blank" 
                                         style="border-bottom: 1px solid black;
