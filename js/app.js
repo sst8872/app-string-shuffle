@@ -101,6 +101,10 @@ function shuffle (arr) {
 }
 
 function loadJSON(len) {
+    if (len >= 7) {
+        alert('메뉴가 너무 많아요 ㅠㅠ');
+        return;
+    }
     let id = "1jlOs08Z4Qt2sJwBK2eXRS8YdTiSPfgCXnFc107UY1g8";
     let urls = [];
     for (let sheetNum = 1; sheetNum <= len; sheetNum++) {
@@ -134,6 +138,10 @@ function loadJSON(len) {
         })).then(result => {
             myData = result
             const types = document.querySelectorAll('.sentence');
+            types.forEach((type, i) => {
+                type.dataset.value = i;
+                type.innerHTML = myData[i].key;
+            });
             types.forEach(type => {
                 type.addEventListener('click', function (e) {
                     makeChoice(this.dataset.value);
@@ -144,6 +152,9 @@ function loadJSON(len) {
 
 function makeChoice(value) {
     switch (value) {
+        case '0' :
+            makeWordContent(0)
+            break;
         case '1' :
             makeWordContent(1)
             break;
@@ -156,18 +167,18 @@ function makeChoice(value) {
         case '4' :
             makeWordContent(4)
             break;
-        case '5' :
+        default:
             makeWordContent(5)
-            break;
     }
 }
 
 function makeWordContent(num) {
-    shuffle(myData[num-1].value);
+    shuffle(myData[num].value);
     exportContent.innerHTML = '';
-    let tempData = myData[num-1].value;
+    let tempData = myData[num].value;
     // tempData.forEach((sentence, i)=> console.log(`${i+1}. ${sentence.en}`));
 
+    exportContent.innerHTML = `<h3 style="text-align: center">${myData[num].key} TEST</h3><br>`;
     tempData.forEach((sentence, i) => {
         let tempSentence = shuffStr([sentence.en]);
         tempSentence;
@@ -185,7 +196,9 @@ function makeWordContent(num) {
                                      `;
     });
 
-    Export2Doc('exportContent', num + ' 형식');
+    console.log(myData[num].key);
+
+    Export2Doc('exportContent', myData[num].key);
     exportContent.innerHTML = '';
 }
 
