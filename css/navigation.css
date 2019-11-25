@@ -54,11 +54,13 @@ body {
 }
 
 #nav-logo {
-    color: #444;
+    /* commented by me */
+    /*color: #444;*/
     text-decoration: none;
 }
 #nav-logo:hover {
-    color: #666;
+    /* commented by me */
+    /*color: #666;*/
 }
 
 .nav-ul {
