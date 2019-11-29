@@ -37,6 +37,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
@@ -104,7 +105,8 @@
       <workItem from="1574462010328" duration="7666000" />
       <workItem from="1574478890437" duration="4224000" />
       <workItem from="1574690484671" duration="975000" />
-      <workItem from="1574691498999" duration="2844000" />
+      <workItem from="1574691498999" duration="3194000" />
+      <workItem from="1574731363764" duration="2144000" />
     </task>
     <servers />
   </component>
